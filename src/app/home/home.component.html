@@ -1,0 +1,14 @@
+
+<h1 class="mainH1 text-center m-5 fw-bolder">Movies Home</h1>
+
+<div class="container">
+    <div class="row ">
+
+      @for (item of homeMovies; track $index) {
+        <div class="mainCard col-md-3 mb-3 ">
+        <app-one-card [oneCard]="item"></app-one-card>
+        </div>
+    }
+
+    </div>
+</div>

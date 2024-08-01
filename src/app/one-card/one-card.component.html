@@ -1,0 +1,11 @@
+
+    <div class="card text-bg-dark h-100" >
+        <img [src]="imgPath+oneCard.poster_path" class="card-img-top w-100" alt="...">
+        <div class="card-body ">
+          <h4 class="card-title pb-1">{{oneCard.title ? oneCard.title.split(" ").splice(0,4).join(" ") : oneCard.name.split(" ").splice(0,2).join(" ")}}</h4>
+          <h5 >Media Type : {{oneCard.media_type}}</h5>
+          <h6 class="overview">OverView :<p class="overviewP">{{oneCard.overview.split(" ").splice(0,12).join(" ")}}.</p> </h6>
+          <p class="btn btn-primary fw-bolder ">Vote : <span class="voteValue">{{oneCard.vote_average}}</span></p>
+        </div>
+      </div>
+
